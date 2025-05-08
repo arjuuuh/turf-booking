@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.offers-page {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #000000,   #963726);
+    color: white;
+}
+
+.offers-heading {
+    padding: 20px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.offers-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #ddd;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.7);
+}
+
+.offer-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.offer-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.offer-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.offer-card ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.offer-note {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.offers-footer {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.book-now-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.book-now-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}

@@ -1,0 +1,185 @@
+/* Root Variables */
+:root {
+  --field-green: #2E8B57;
+  --sport-orange: #FF6B35;
+  --team-blue: #004E89;
+  --light-gray: #f5f7fa;
+  --error-red: #dc3545;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #000000, #000000);
+  color: white;
+}
+
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Form Container */
+.sporty-booking-form {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: #000000;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid var(--sport-orange);
+  text-align: center;
+}
+
+/* Form Header */
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--sport-orange);
+}
+
+/* Form Rows */
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--team-blue);
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 2px solid #e1e5ee;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* Sport Options */
+.sport-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.sport-option {
+  flex: 1 1 120px;
+  padding: 1rem;
+  border: 2px solid #e1e5ee;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.sport-option.selected {
+  background: var(--team-blue);
+  color: white;
+  border-color: var(--team-blue);
+}
+
+/* Time Slots */
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.time-slot {
+  padding: 0.8rem;
+  border: 2px solid #e1e5ee;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.time-slot.selected {
+  background: var(--field-green);
+  color: white;
+  border-color: var(--field-green);
+}
+
+.time-slot.booked {
+  background-color: #000000;
+  color: #ffecec;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.slot-status {
+  font-size: 0.8rem;
+  color: red;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--field-green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Error Message */
+.error-message {
+  color: var(--error-red);
+  background-color: #f8d7da;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Success Message */
+.booking-success {
+  text-align: center;
+  padding: 2rem;
+  background: #000000;
+  border-radius: 12px;
+  color: #2e7d32;
+}
+
+.success-icon {
+  font-size: 3rem;
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .time-slots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

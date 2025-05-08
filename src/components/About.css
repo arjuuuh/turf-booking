@@ -1,0 +1,91 @@
+.about-page{
+  background: linear-gradient(135deg, #080808, #6e291c); /* Clean sporty gradient */
+}
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #fff;
+  background:  #000000; /* Black-themed background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4caf50; /* Green for the heading */
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for text */
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #ddd; /* Light gray for better readability */
+}
+
+.highlight {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.facilities-section {
+  margin-top: 30px;
+}
+
+.facilities-section h2 {
+  font-size: 2rem;
+  color: #ff9800; /* Orange for the facilities heading */
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.facility {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.facility-image {
+  width: 120px; /* Adjusted size for better appearance */
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover; /* Ensures the image fits nicely */
+}
+
+.facility p {
+  font-size: 1.1rem;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.contact-section {
+  margin-top: 30px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  color: #4caf50; /* Green for the contact heading */
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #ddd; /* Light gray for contact details */
+}
+
+.contact-section p strong {
+  color: #ff9800; /* Highlight important text in orange */
+}
